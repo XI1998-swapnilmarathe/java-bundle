@@ -1,6 +1,6 @@
 containers:
   java-build-env:
-    image: adoptopenjdk:14.0.2_8-jdk-hotspot
+    image: azul/zulu-openjdk-alpine:17.0.0
     volumes:
       - local: <{batect.project_directory}
         container: /code
