@@ -8,9 +8,12 @@ containers:
       - type: cache
         name: gradle-cache
         container: /home/container-user/.gradle
+      - local: .batect/reports
+        container: /code/build/
     working_directory: /code
     environment:
       GRADLE_OPTS: -Dorg.gradle.daemon=false
     run_as_current_user:
       enabled: true
       home_directory: /home/container-user
+    
