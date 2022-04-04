@@ -11,7 +11,7 @@ containers:
       - local: <{batect.project_directory}/.batect/reports
         container: /code/build
         options: ro
-    working_directory: /code/build/reports
+    working_directory: /code
     environment:
       GRADLE_OPTS: -Dorg.gradle.daemon=false
     run_as_current_user:
