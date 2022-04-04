@@ -8,7 +8,7 @@ containers:
       - type: cache
         name: gradle-cache
         container: /home/container-user/.gradle
-      - local: .batect/reports
+      - local: <{batect.project_directory}/.batect/reports
         container: /code/build/
     working_directory: /code
     environment:
