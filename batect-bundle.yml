@@ -10,6 +10,7 @@ containers:
         container: /home/container-user/.gradle
       - local: <{batect.project_directory}/.batect/reports
         container: /code/build/reports/tests
+        options: ro
     working_directory: /code
     environment:
       GRADLE_OPTS: -Dorg.gradle.daemon=false
